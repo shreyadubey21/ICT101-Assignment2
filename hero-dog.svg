@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" role="img" aria-labelledby="ht"><title id="ht">A smiling dog in a bubble bath</title>
+<defs>
+<linearGradient id="tub" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE9F4"/></linearGradient>
+<radialGradient id="bub" cx="35%" cy="30%" r="70%"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E6EFF7"/></radialGradient>
+</defs>
+<ellipse cx="260" cy="410" rx="210" ry="18" fill="#1F3A52" opacity="0.12"/>
+<!-- dog -->
+<g>
+<path d="M190 250 C185 190 215 140 262 138 C312 136 342 185 336 250 Z" fill="#E9C9A0"/>
+<path d="M200 150 C160 150 145 200 160 255 C172 262 188 250 192 238 C196 205 205 175 214 160 Z" fill="#B98552"/>
+<path d="M322 150 C362 150 377 200 362 255 C350 262 334 250 330 238 C326 205 317 175 308 160 Z" fill="#B98552"/>
+<ellipse cx="262" cy="206" rx="44" ry="32" fill="#F6E6CF"/>
+<ellipse cx="262" cy="186" rx="15" ry="10" fill="#1F3A52"/>
+<path d="M238 164 q10 -10 20 0" fill="none" stroke="#1F3A52" stroke-width="5" stroke-linecap="round"/>
+<path d="M266 164 q10 -10 20 0" fill="none" stroke="#1F3A52" stroke-width="5" stroke-linecap="round"/>
+<path d="M240 206 q22 18 44 0" fill="none" stroke="#1F3A52" stroke-width="5" stroke-linecap="round"/>
+<path d="M254 213 q8 24 16 0" fill="#E8776A"/>
+<circle cx="224" cy="194" r="8" fill="#F4A9A0" opacity="0.7"/>
+<circle cx="300" cy="194" r="8" fill="#F4A9A0" opacity="0.7"/>
+<!-- foam on head -->
+<g fill="url(#bub)" stroke="#4F86B5" stroke-width="3">
+<circle cx="240" cy="135" r="20"/><circle cx="268" cy="124" r="24"/><circle cx="294" cy="138" r="18"/>
+</g>
+</g>
+<!-- tub -->
+<path d="M70 250 H450 C450 330 400 380 330 385 H190 C120 380 70 330 70 250 Z" fill="url(#tub)" stroke="#4F86B5" stroke-width="5"/>
+<rect x="55" y="238" width="410" height="24" rx="12" fill="#4F86B5"/>
+<path d="M150 385 L140 408 M370 385 L380 408" stroke="#4F86B5" stroke-width="10" stroke-linecap="round"/>
+<!-- paws on rim -->
+<ellipse cx="205" cy="240" rx="22" ry="13" fill="#E9C9A0" stroke="#B98552" stroke-width="3"/>
+<ellipse cx="320" cy="240" rx="22" ry="13" fill="#E9C9A0" stroke="#B98552" stroke-width="3"/>
+<!-- foam line -->
+<g fill="url(#bub)" stroke="#4F86B5" stroke-width="3">
+<circle cx="95" cy="232" r="22"/><circle cx="130" cy="222" r="26"/><circle cx="160" cy="236" r="18"/>
+<circle cx="365" cy="230" r="22"/><circle cx="400" cy="220" r="27"/><circle cx="432" cy="234" r="19"/>
+</g>
+<!-- duck -->
+<g transform="translate(398 150)">
+<ellipse cx="0" cy="40" rx="30" ry="20" fill="#F2A04F" stroke="#1F3A52" stroke-width="3"/>
+<circle cx="14" cy="14" r="16" fill="#F2A04F" stroke="#1F3A52" stroke-width="3"/>
+<path d="M28 12 l16 4 -16 6z" fill="#E8776A" stroke="#1F3A52" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="18" cy="9" r="3" fill="#1F3A52"/>
+</g>
+<!-- floating bubbles -->
+<g fill="none" stroke="#4F86B5" stroke-width="3">
+<circle cx="110" cy="150" r="14"/><circle cx="80" cy="110" r="8"/><circle cx="150" cy="80" r="11"/>
+<circle cx="360" cy="90" r="9"/><circle cx="455" cy="100" r="12"/>
+</g>
+<g fill="#FFFFFF"><circle cx="106" cy="145" r="3"/><circle cx="146" cy="76" r="2.5"/><circle cx="451" cy="96" r="3"/></g>
+</svg>

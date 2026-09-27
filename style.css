@@ -1,0 +1,395 @@
+/* style.css - Paws & Polish Pet Grooming
+   Colours from our Miro board: soft blue, warm orange and a light neutral background.
+   CSS3 features used: gradients, rounded corners (border-radius), box shadows,
+   transitions and transforms (hover effects), and a media query for small screens. */
+
+/* ---------- General ---------- */
+
+body {
+    margin: 0;
+    font-family: "Nunito", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #1F3A52;
+    background-color: #F3F7FA;
+}
+
+h1, h2, h3 {
+    font-family: "Fredoka", Arial, sans-serif;
+    color: #1F3A52;
+}
+
+h1 { font-size: 40px; margin-bottom: 10px; }
+h2 { font-size: 28px; margin-top: 40px; }
+
+a { color: #2E5F8A; }
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 20px;
+}
+
+/* ---------- Header and navigation ---------- */
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 12px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: "Fredoka", Arial, sans-serif;
+    font-size: 24px;
+    color: #1F3A52;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: auto;
+}
+
+nav a {
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: #1F3A52;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #DCE9F4;
+}
+
+nav .nav-button {
+    background-color: #1F3A52;
+    color: white;
+}
+
+.search-box input {
+    padding: 8px;
+    border: 2px solid #DCE9F4;
+    border-radius: 20px;
+}
+
+.search-box button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: #DCE9F4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ---------- Buttons ---------- */
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 5px 5px 5px 0;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #F6B26B, #F2A04F);
+    color: #1F3A52;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(217, 119, 43, 0.4);
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+.button-outline {
+    background: none;
+    border: 2px solid #1F3A52;
+    box-shadow: none;
+}
+
+.button-small {
+    padding: 6px 14px;
+    font-size: 14px;
+}
+
+/* ---------- Home page ---------- */
+
+.hero {
+    background: linear-gradient(135deg, #DCE9F4, #FDF1E4);
+    padding: 40px 0;
+}
+
+.hero-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-row > div {
+    flex: 1;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.about {
+    background-color: #1F3A52;
+    color: white;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+.about h2 { color: white; }
+
+.about-image {
+    width: 40%;
+    border-radius: 20px;
+}
+
+/* ---------- Cards (services and reviews) ---------- */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card, .review {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    color: #1F3A52;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stars {
+    color: #E8883A;
+    font-size: 20px;
+    margin: 0;
+}
+
+/* ---------- Services page ---------- */
+
+.filters a {
+    display: inline-block;
+    margin: 5px 5px 15px 0;
+    padding: 8px 16px;
+    border: 2px solid #1F3A52;
+    border-radius: 20px;
+    color: #1F3A52;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.filters a:hover {
+    background-color: #1F3A52;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+th {
+    background-color: #4F86B5;
+    color: white;
+    text-align: left;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #DCE9F4;
+}
+
+tr:hover td {
+    background-color: #F3F7FA;
+}
+
+/* ---------- Forms ---------- */
+
+.form-box {
+    max-width: 500px;
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-box label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box input[type="date"],
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #DCE9F4;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    border-color: #4F86B5;
+    outline: none;
+}
+
+.radio-row label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.error {
+    color: #B3261E;
+    font-weight: bold;
+}
+
+.error-box, .success, .confirmation {
+    max-width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.error-box {
+    background-color: #FDECEA;
+    border-left: 6px solid #B3261E;
+}
+
+.success {
+    background-color: #E3F4E8;
+    border-left: 6px solid #2E7D4F;
+}
+
+.confirmation {
+    background: linear-gradient(135deg, #DCE9F4, #FDF1E4);
+    border: 2px dashed #4F86B5;
+    font-size: 18px;
+}
+
+.small {
+    font-size: 14px;
+    color: #52667A;
+}
+
+/* ---------- Search and account ---------- */
+
+.result {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.result h3 { margin: 0; }
+
+.two-columns {
+    display: flex;
+    gap: 30px;
+}
+
+.two-columns > div {
+    flex: 1;
+}
+
+.pet-card {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-left: 6px solid #F2A04F;
+    border-radius: 10px;
+}
+
+.pet-card h3, .pet-card p { margin: 5px 0; }
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #17304A;
+    color: #D5E1EC;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+footer h3 { color: white; }
+footer a { color: white; }
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-row > div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+    border-top: 1px solid #2E4A66;
+    font-size: 14px;
+}
+
+/* ---------- Small screens (phones) ---------- */
+
+@media (max-width: 800px) {
+    .hero-row, .two-columns {
+        flex-direction: column;
+    }
+    .hero-image, .about-image {
+        width: 100%;
+    }
+    nav {
+        margin-left: 0;
+    }
+    h1 { font-size: 30px; }
+    table { font-size: 14px; }
+    .hide-mobile { display: none; }
+}
